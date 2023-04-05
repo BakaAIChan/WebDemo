@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BakaAiChan</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript">
+        function handleSubmit() {
+            var input = document.getElementById("nameInput").value;
+            switch(input) {
+                case "lxk":
+                    window.location.href = "https://ys.mihoyo.com/";
+                    break;
+                case "hzm":
+                    document.getElementById("image").src = "hzm.jpg";
+                    break;
+                case "wff":
+                    document.getElementById("image").src = "wff.jpg";
+                    break;
+                default:
+                    window.location.href = "default.png";
+            }
+        }
+    </script>
+</head>
+<body>
+<form onsubmit="handleSubmit(); return false;">
+    <input id="nameInput" type="text" placeholder="输入你的姓名首字母">
+    <br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
