@@ -1,0 +1,50 @@
+body {
+    background-image: url("background.jpg");
+    background-position: center center;
+    /* 背景图不平铺 */
+    background-repeat: no-repeat;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+    /* 设置背景颜色，背景图加载过程中会显示背景色 */
+    background-color: white;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #3e8e41;
+}
